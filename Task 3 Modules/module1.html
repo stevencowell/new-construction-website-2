@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Module 1: Identifying & Assessing Risks - Task 3 Work Safe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 1: Identifying & Assessing Risks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Roboto', Arial, sans-serif; background: #f9fafb; color: #333; line-height: 1.6; }
+    a { color: #2169d1; text-decoration: none; }
+    header { background: linear-gradient(135deg, #2169d1, #3a8dde); color: #fff; padding: 3rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; font-weight: 700; }
+    header p { margin: 0.5rem 0 0; font-size: 1.125rem; opacity: 0.9; }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .back-link { display: inline-block; margin-bottom: 1.5rem; }
+    h2 { color: #2169d1; font-size: 1.75rem; margin-top: 2rem; }
+    h3 { color: #2169d1; font-size: 1.25rem; margin-top: 1.5rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem auto; }
+    table th, table td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
+    table th { background: #eef2f5; }
+    section { margin-bottom: 2rem; }
+    .highlight { background: #f0f8ff; padding: 0.5rem; border-left: 4px solid #2169d1; }
+  
+      /* Unified palette and navigation styles for module pages */
+  .back-link {
+    color: #2563eb;
+  }
+  .back-link:hover {
+    color: #1e40e9;
+    text-decoration: underline;
+  }
+  header {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40e9 100%);
+  }
+  a {
+    color: #2563eb;
+  }
+  a:hover {
+    color: #1e40e9;
+    text-decoration: underline;
+  }
+  h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #eff6ff;
+  }
+  ul li::marker {
+    color: #2563eb;
+  }
+  .module-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  .module-nav a {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40e9 100%);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .module-nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Center all images across the website */
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Module 1: Identifying & Assessing Risks</h1>
+    <p>Task 3: Work Safe - Supplementary Reference Notes (CPCCWHS2001)</p>
+  </header>  
+  
+  <!-- <div style="text-align: center; margin: 1rem auto;">
+    <a href="../evidence-central-index.html" class="index-map-btn" style="
+      display: inline-block;
+      background: linear-gradient(135deg, #28a745 0%, #5cc56f 100%);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+      transition: all 0.3s ease;
+    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(40, 167, 69, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(40, 167, 69, 0.3)'">
+      Index Map
+    </a>
+  </div> -->
+  
+  <main>
+    <a href="../index.html" class="back-link">← Back to Home Page</a>
+    <a href="task3_index.html" class="back-link">← Back to Task 3 Modules</a>
+
+    <section>
+      <h2>1. WHS Legislation & Guidance</h2>
+      <p>The foundation of any risk management process is understanding the legislative framework:</p>
+      <ul>
+        <li><strong>WHS Act 2011</strong>: Primary legislation requiring duty holders to eliminate or minimise risks to health and safety. Obligations apply to employers, workers and others.</li>
+        <li><strong>WHS Regulations</strong>: Detailed requirements under the Act (e.g. licensing for high-risk work, plant operation standards).</li>
+        <li><strong>Codes of Practice</strong>: Practical guides on how to achieve the standards set out in the Act and Regulations (e.g. <em>Manual Handling</em>, <em>Hazardous Chemicals</em>).</li>
+        <li><strong>Australian Standards</strong>: Standards that may be mandatory (when referenced) or voluntary (e.g. AS/NZS ISO 31000:2018 <em>Risk Management</em>). These define best practice for processes and equipment.</li>
+        <li><strong>S/NZS ISO 14001:2016</strong> <em>Environmental management systems</em>: Guides development of site-specific Environmental Management Plans (EMPs).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Hazard vs. Risk</h2>
+      <p><span class="highlight"><strong>Hazard</strong></span> - any source or situation with potential to cause harm (e.g. slippery floor, unguarded machinery).</p>
+      <p><span class="highlight"><strong>Risk</strong></span> - the likelihood and severity of harm arising from a hazard.</p>
+      <p><em>Key point:</em> You must first identify hazards, then assess risks before applying controls.</p>
+    </section>
+
+    <section>
+      <h2>3. Risk Assessment Process & Matrix</h2>
+      <p>A systematic approach ensures all hazards are captured and controlled.</p>
+      <ol>
+        <li><strong>Identify Hazards</strong>: Walk the site, consult workers, review incident reports.</li>
+        <li><strong>Assess Risks</strong>: Use a risk matrix to rate each hazard by likelihood and consequence.</li>
+        <li><strong>Implement Controls</strong>: Apply measures according to the hierarchy of controls.</li>
+        <li><strong>Record and Review</strong>: Document in a JSA or SWMS and monitor effectiveness.</li>
+      </ol>
+      <p><strong>Example Risk Matrix:</strong></p>
+      <table>
+        <tr>
+          <th>Consequence \ Likelihood</th><th>Very Likely</th><th>Likely</th><th>Unlikely</th><th>Very Unlikely</th>
+        </tr>
+        <tr>
+          <td><strong>Severe<br>(Death / Permanent disablement)</strong></td>
+          <td style="background:#f28b82;">Extreme Risk</td><td style="background:#f28b82;">Extreme Risk</td><td style="background:#fbbc04;">High Risk</td><td style="background:#34a853;">Moderate Risk</td>
+        </tr>
+        <tr>
+          <td><strong>Major<br>(Serious injury / long-term illness)</strong></td>
+          <td style="background:#f28b82;">Extreme Risk</td><td style="background:#fbbc04;">High Risk</td><td style="background:#34a853;">Moderate Risk</td><td style="background:#34a853;">Moderate Risk</td>
+        </tr>
+        <tr>
+          <td><strong>Moderate<br>(Medical treatment, days off)</strong></td>
+          <td style="background:#fbbc04;">High Risk</td><td style="background:#34a853;">Moderate Risk</td><td style="background:#34a853;">Moderate Risk</td><td style="background:#34a853;">Low Risk</td>
+        </tr>
+        <tr>
+          <td><strong>Minor<br>(First aid only)</strong></td>
+          <td style="background:#34a853;">Moderate Risk</td><td style="background:#34a853;">Low Risk</td><td style="background:#34a853;">Low Risk</td><td style="background:#34a853;">Low Risk</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. Hierarchy of Controls</h2>
+      <p>Controls must follow this sequence to be effective. Aim to use measures as high up the hierarchy as possible and combine controls when needed.</p>
+      <ol>
+        <li><strong>Elimination</strong> - Remove the hazard entirely (e.g. cease use of a dangerous chemical).</li>
+        <li><strong>Substitution</strong> - Replace the hazard with a safer alternative (e.g. use a water-based paint instead of a solvent-based paint).</li>
+        <li><strong>Isolation</strong> - Separate people from the hazard (e.g. install physical barriers around an excavation or place noisy equipment in an enclosed room).</li>
+        <li><strong>Engineering Controls</strong> - Modify equipment or use mechanical devices to reduce exposure (e.g. machine guards, ventilation systems, lifting equipment).</li>
+        <li><strong>Administrative Controls</strong> - Change how people work by implementing safe work procedures, training, job rotation and warning signs.</li>
+        <li><strong>Personal Protective Equipment (PPE)</strong> - Provide suitable PPE such as gloves, respirators, hard hats and hearing protection as the last line of defence when risks remain.</li>
+      </ol>
+      <figure style="text-align:center; margin: 1rem auto;">
+        <img src="../additional tools/new Hierarchy of Controls.jpg" alt="Hierarchy of Controls pyramid from Elimination (top) to PPE (bottom)" style="max-width: 540px; width: 100%; height: auto;" />
+        <figcaption style="font-size:0.9rem; color:#555; margin-top:0.5rem;">Hierarchy of Controls - most effective at top</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>5. Duty of Care Responsibilities</h2>
+      <h3>You (Worker) Must:</h3>
+      <ul>
+        <li>Take reasonable care for your own health and safety.</li>
+        <li>Ensure your actions do not harm others.</li>
+        <li>Comply with instructions and safe work procedures.</li>
+        <li>Report hazards, incidents and injuries promptly.</li>
+      </ul>
+      <h3>Your Employer Must:</h3>
+      <ul>
+        <li>Provide and maintain a safe work environment.</li>
+        <li>Consult with workers on WHS matters.</li>
+        <li>Provide information, training and supervision.</li>
+        <li>Implement hazard controls according to the hierarchy.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Hazard Reporting Process</h2>
+      <p>When you identify a hazard:</p>
+      <ol>
+        <li><strong>Isolate/Control</strong> any immediate risk if safe to do so (e.g. erect barrier).</li>
+        <li><strong>Assess</strong> the hazard using likelihood/severity.</li>
+        <li><strong>Report</strong> to your supervisor or using site reporting system (JSA register).</li>
+        <li><strong>Record</strong> details in JSA/SWMS and follow up controls.</li>
+        <li><strong>Review</strong> after control implementation.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>7. Safe Work Practices &amp; Instructions</h2>
+      <h3>Examples of Safe Work Practices:</h3>
+      <ul>
+        <li>Following emergency procedures promptly.</li>
+        <li>Performing risk analysis before tasks.</li>
+        <li>Proper storage and removal of debris.</li>
+        <li>Using PPE as indicated (ear, eye, foot protection).</li>
+      </ul>
+      <h3>Key Documents:</h3>
+      <ul>
+        <li><strong>Job Safety Analysis (JSA)</strong>: Breaks tasks into steps, identifies hazards and controls.</li>
+        <li><strong>Safety Data Sheet (SDS)</strong>: Details safe handling, storage and disposal of hazardous materials.</li>
+      </ul>
+      <p class="highlight">Both JSA and SDS must be consulted and kept current.</p>
+    </section>
+
+    <section>
+      <h2>8. Site Induction &amp; Licensing</h2>
+      <ul>
+        <li><strong>Site-Specific Induction</strong> before any work begins, covering hazards, emergency plans, and site rules.</li>
+        <li><strong>Toolbox Talks</strong> to discuss daily hazards and controls.</li>
+        <li>Verify licences for high-risk work: forklift, confined space entry, working at heights.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. PPE & Signage</h2>
+      <p>This section covers PPE requirements and safety signage. For comprehensive information about Personal Protective Equipment, including detailed descriptions, safety features, and maintenance requirements, please refer to the PPE section in <a href="../Task 1 Modules/module1.html#ppe">Task 1: PPE Overview</a>.</p>
+      
+      <div style="background: #f8f9fa; border-left: 4px solid #2563eb; padding: 1rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+        <h4 style="margin-top: 0; color: #2563eb;">📚 Reference Section</h4>
+        <p><strong>For complete PPE information, visit:</strong> <a href="../Task 1 Modules/module1.html#ppe" style="font-weight: 600; color: #2563eb;">Task 1: PPE Overview →</a></p>
+        <p>This section contains detailed descriptions, images, and safety information for all PPE including:</p>
+        <ul style="margin: 0.5rem 0;">
+          <li>Head and face protection</li>
+          <li>Eye protection</li>
+          <li>Hearing protection</li>
+          <li>Respiratory protection</li>
+          <li>Hand and body protection</li>
+          <li>Foot protection</li>
+          <li>High visibility clothing</li>
+        </ul>
+      </div>
+
+
+      <h3>Purpose of Barricades &amp; Signage:</h3>
+      <ul>
+        <li>Protect the general public and workers.</li>
+        <li>Comply with Australian Standards and WHS legislation.</li>
+        <li>Warn of hazards and isolate dangerous areas.</li>
+      </ul>
+      <p><strong>ACM</strong> stands for <em>Asbestos Containing Material</em>.</p>
+
+      <h3>Safety Signage Examples</h3>
+      <p>This section covers safety signage requirements. For comprehensive information about safety signs, including detailed descriptions, meanings, and placement requirements, please refer to the signage section in <a href="../Task 1 Modules/module3.html#signage">Task 1: Safety Signage Overview</a>.</p>
+      
+      <div style="background: #f8f9fa; border-left: 4px solid #2563eb; padding: 1rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+        <h4 style="margin-top: 0; color: #2563eb;">📚 Reference Section</h4>
+        <p><strong>For complete safety signage information, visit:</strong> <a href="../Task 1 Modules/module3.html#signage" style="font-weight: 600; color: #2563eb;">Task 1: Safety Signage Overview →</a></p>
+        <p>This section contains detailed descriptions, images, and safety information for all signage including:</p>
+        <ul style="margin: 0.5rem 0;">
+          <li>Warning signs</li>
+          <li>Prohibition signs</li>
+          <li>Mandatory signs</li>
+          <li>Emergency signs</li>
+          <li>Information signs</li>
+        </ul>
+      </div>
+
+      <h4>Fire Safety Equipment</h4>
+      
+      <p><strong>Fire Extinguishers</strong><br>
+      Fire extinguishers are essential first-response firefighting equipment on Australian construction sites. They must comply with Australian Standard AS 2444 and be regularly maintained according to AS 1851.</p>
+      <img src="../additional tools/fire extinguisher new.jpg" alt="Fire extinguisher - essential firefighting equipment for Australian construction sites" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      
+      <h5>Types of Fire Extinguishers in Australia:</h5>
+      <ul>
+        <li><strong>Water (Red):</strong> For Class A fires (wood, paper, textiles). Not suitable for electrical or flammable liquid fires.</li>
+        <li><strong>Foam (Blue):</strong> For Class A and B fires (flammable liquids). Creates a barrier between fuel and oxygen.</li>
+        <li><strong>Carbon Dioxide (Black):</strong> For Class B and C fires (flammable liquids and electrical). Leaves no residue but can cause asphyxiation in confined spaces.</li>
+        <li><strong>Dry Chemical (White):</strong> For Class A, B, C, and E fires. Most versatile but leaves residue that requires cleanup.</li>
+        <li><strong>Wet Chemical (Yellow):</strong> Specifically for Class F fires (cooking oils and fats). Creates a soapy film that prevents re-ignition.</li>
+      </ul>
+      
+      <h5>Australian Fire Extinguisher Requirements:</h5>
+      <ul>
+        <li>Must be installed according to AS 2444 (Installation of fire protection equipment)</li>
+        <li>Regular maintenance required under AS 1851 (Maintenance of fire protection systems)</li>
+        <li>Annual inspection by qualified technicians</li>
+        <li>Monthly visual inspection by site personnel</li>
+        <li>Must be easily accessible and not obstructed</li>
+        <li>Proper signage and identification required</li>
+      </ul>
+      
+      <h5>Using Fire Extinguishers (PASS Method):</h5>
+      <ul>
+        <li><strong>P</strong>ull the pin</li>
+        <li><strong>A</strong>im at the base of the fire</li>
+        <li><strong>S</strong>queeze the handle</li>
+        <li><strong>S</strong>weep from side to side</li>
+      </ul>
+      
+
+
+      <p><strong>Fire Blanket</strong><br>
+      Fire blankets are used to smother small fires, particularly grease or electrical fires. Know their location and how to use them safely.</p>
+      <img src="images/Fire Blanket.png" alt="Fire blanket - essential fire safety equipment" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      
+      <h5>How to Use a Fire Blanket:</h5>
+      <ol>
+        <li><strong>Remove the blanket</strong> from its container by pulling the tabs</li>
+        <li><strong>Hold the blanket</strong> by the corners with your hands protected</li>
+        <li><strong>Approach the fire</strong> from the side, not directly from the front</li>
+        <li><strong>Cover the fire completely</strong> by placing the blanket over the flames</li>
+        <li><strong>Leave the blanket in place</strong> until the fire is completely out</li>
+        <li><strong>Do not remove the blanket</strong> as this could reignite the fire</li>
+      </ol>
+      
+      <p><em>Important:</em> Only use fire blankets on small, contained fires. For larger fires, evacuate immediately and call emergency services.</p>
+
+
+    </section>
+
+    <section>
+      <h2>Further Resources</h2>
+      <ul>
+        <li><a href="https://www.safework.nsw.gov.au">SafeWork NSW</a>: Legislation, codes and guides.</li>
+        <li><a href="https://www.iso.org/standard/65694.html">ISO 31000 Risk Management</a>.</li>
+        <li>JSA/SWMS templates provided by your RTO.</li>
+      </ul>
+    </section>
+
+      <div class="module-nav">
+      <a href="task3_index.html">← Back to Modules</a>
+      <a href="module2.html">Next Module →</a>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:1rem; background:#fff; border-top:1px solid #e0e0e0; font-size:0.9rem; color:#555;">
+    &copy; 2025 Construction VET Resources
+  </footer>
+  <script src="../search.js"></script>
+</body>
+</html>
+
+
