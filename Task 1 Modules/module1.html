@@ -72,6 +72,40 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* PPE alternating grid layout */
+  .ppe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ppe-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem 2rem;
+    padding: 0.5rem 0;
+  }
+  .ppe-item .col-text h3 {
+    margin: 0 0 0.25rem 0;
+  }
+  .ppe-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .ppe-item:nth-child(even) .col-text {
+    grid-column: 2;
+  }
+  .ppe-item:nth-child(even) .col-image {
+    grid-column: 1;
+  }
+  @media (max-width: 640px) {
+    .ppe-item { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -119,40 +153,84 @@
     <h2>Personal Protective Equipment (PPE)</h2>
     <p>Personal Protective Equipment is essential for protecting workers from workplace hazards. The following PPE items are commonly required on construction sites:</p>
     
-    <h3>Head Protection</h3>
-    <p><strong>Hard Hat</strong><br>
-    Protects against falling objects, impacts, and electrical hazards. Must be worn at all times on construction sites. Ensure proper fit and replace if damaged.</p>
-    <img src="images/Hard Hat.jpeg" alt="Hard hat - essential head protection for construction sites" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+    <div class="ppe-grid">
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Head Protection</h3>
+          <p><strong>Hard Hat</strong><br>
+          Protects against falling objects, impacts, and electrical hazards. Must be worn at all times on construction sites. Ensure proper fit and replace if damaged.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/Hard Hat.jpeg" alt="Hard hat - essential head protection for construction sites" />
+        </div>
+      </div>
 
-    <h3>Hand Protection</h3>
-    <p><strong>Work Gloves</strong><br>
-    Protects hands from cuts, abrasions, chemicals, and other hazards. Choose the right type for the specific task and material being handled.</p>
-    <img src="images/Work gloves.jpeg" alt="Work gloves - essential hand protection for construction tasks" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Hand Protection</h3>
+          <p><strong>Work Gloves</strong><br>
+          Protects hands from cuts, abrasions, chemicals, and other hazards. Choose the right type for the specific task and material being handled.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/Work gloves.jpeg" alt="Work gloves - essential hand protection for construction tasks" />
+        </div>
+      </div>
 
-    <h3>Hearing Protection</h3>
-    <p><strong>Ear Muffs</strong><br>
-    Protects against excessive noise levels from power tools and machinery. Must be worn when working with noisy equipment or in high-noise areas.</p>
-    <img src="images/ear muffs.jpeg" alt="Ear muffs - essential hearing protection for noisy construction work" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Hearing Protection</h3>
+          <p><strong>Ear Muffs</strong><br>
+          Protects against excessive noise levels from power tools and machinery. Must be worn when working with noisy equipment or in high-noise areas.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/ear muffs.jpeg" alt="Ear muffs - essential hearing protection for noisy construction work" />
+        </div>
+      </div>
 
-    <h3>Eye Protection</h3>
-    <p><strong>Safety Glasses</strong><br>
-    Safety glasses or goggles protect against flying particles, dust, and chemical splashes. They should fit snugly and be kept clean for maximum protection.</p>
-    <img src="../additional tools/safety glasses.jpg" alt="Safety glasses - essential eye protection for construction work" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Eye Protection</h3>
+          <p><strong>Safety Glasses</strong><br>
+          Safety glasses or goggles protect against flying particles, dust, and chemical splashes. They should fit snugly and be kept clean for maximum protection.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="../additional tools/safety glasses.jpg" alt="Safety glasses - essential eye protection for construction work" />
+        </div>
+      </div>
 
-    <h3>Respiratory Protection</h3>
-    <p><strong>Respirator</strong><br>
-    Essential for protection against dust, fumes, and airborne particles. Must be properly fitted and maintained.</p>
-    <img src="images/Respirator.jpeg" alt="Respirator - essential protection against airborne hazards" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Respiratory Protection</h3>
+          <p><strong>Respirator</strong><br>
+          Essential for protection against dust, fumes, and airborne particles. Must be properly fitted and maintained.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/Respirator.jpeg" alt="Respirator - essential protection against airborne hazards" />
+        </div>
+      </div>
 
-    <h3>Foot Protection</h3>
-    <p><strong>Safety Boots</strong><br>
-    Steel-capped safety boots provide protection against falling objects and crushing injuries. Must meet Australian safety standards.</p>
-    <img src="images/work boots.jpeg" alt="Work boots - essential foot protection for construction sites" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>Foot Protection</h3>
+          <p><strong>Safety Boots</strong><br>
+          Steel-capped safety boots provide protection against falling objects and crushing injuries. Must meet Australian safety standards.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/work boots.jpeg" alt="Work boots - essential foot protection for construction sites" />
+        </div>
+      </div>
 
-    <h3>High Visibility Clothing</h3>
-    <p><strong>High Visibility Clothing</strong><br>
-    Ensures workers are visible to others, especially in low-light conditions or when working near moving vehicles and machinery.</p>
-    <img src="images/High Vis' Cloths.jpeg" alt="High visibility clothing - essential for worker visibility and safety" style="max-width: 150px; max-height: 150px; width: auto; height: auto; margin: 1rem auto; border: 1px solid #ccc; border-radius: 8px;" />
+      <div class="ppe-item">
+        <div class="col-text">
+          <h3>High Visibility Clothing</h3>
+          <p><strong>High Visibility Clothing</strong><br>
+          Ensures workers are visible to others, especially in low-light conditions or when working near moving vehicles and machinery.</p>
+        </div>
+        <div class="col-image">
+          <img class="ppe-image" src="images/High Vis' Cloths.jpeg" alt="High visibility clothing - essential for worker visibility and safety" />
+        </div>
+      </div>
+    </div>
 
     <h3>PPE Requirements</h3>
     <ul>
