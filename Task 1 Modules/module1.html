@@ -82,9 +82,9 @@
   .ppe-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
     gap: 1rem 2rem;
-    padding: 0.5rem 0;
+    padding: 1rem;
   }
   .ppe-item .col-text h3 {
     margin: 0 0 0.25rem 0;
@@ -93,15 +93,26 @@
     width: 180px;
     height: 180px;
     object-fit: contain;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #fff;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    margin: 0; /* keep image aligned with text, not centered */
   }
   .ppe-item:nth-child(even) .col-text {
     grid-column: 2;
   }
   .ppe-item:nth-child(even) .col-image {
     grid-column: 1;
+  }
+  .col-image {
+    justify-self: start; /* align image cell with text */
+  }
+  /* Light borders for table-like cells */
+  .col-text, .col-image {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
   }
   @media (max-width: 640px) {
     .ppe-item { grid-template-columns: 1fr; }
